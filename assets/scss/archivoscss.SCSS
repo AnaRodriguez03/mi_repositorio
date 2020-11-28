@@ -12,7 +12,7 @@
     margin:0;
     padding: 0;
     background-image: url("https://cdn.pixabay.com/photo/2016/11/08/17/59/white-1809005_960_720.jpg");
-    @include size(500px, 500px); 
+    @include size(1500px, 1500px); 
 }
 @media only screen and (min-width: 768px){
      .Body__General{
