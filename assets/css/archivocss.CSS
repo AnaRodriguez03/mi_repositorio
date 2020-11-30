@@ -9,8 +9,8 @@
   margin: 0;
   padding: 0;
   background-image: url("https://cdn.pixabay.com/photo/2016/11/08/17/59/white-1809005_960_720.jpg");
-  height: 500px;
-  width: 500px; }
+  height: 1500px;
+  width: 100%; }
 
 @media only screen and (min-width: 768px) {
   .Body__General {
@@ -45,7 +45,7 @@
   width: 100px; }
 
 .navbar {
-  background-color: black;
+  background-color: rgb(31, 29, 29);
   padding: 1rem 2rem;
   top: 0;
   font-family: 'Josefin Sans', sans-serif;
@@ -261,7 +261,8 @@ ul ul {
   font-family: sans-serif;
   height: 100vh;
   grid-gap: 10px;
-  grid-template-areas: "Productos Contenido INutricional" "TipoP ContenidoP InformacionP"; }
+  grid-template-areas: "Productos Contenido INutricional"
+ "TipoP ContenidoP InformacionP"; }
 
 main > * {
   background-color: aqua;
