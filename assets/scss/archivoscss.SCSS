@@ -170,10 +170,8 @@ ul ul{
     /*footer*/
  .footer__ubicacion{
      display: flex;
-     height: 30px;
-     position: absolute;
+     position: relative;
      bottom: 0;
-     left:0;
      @include size(100%,40px)
  }   
  #footer__grad{
@@ -182,7 +180,7 @@ ul ul{
     left: 0;
     bottom: 0;
     background-image: linear-gradient(to right,black,rgb(180, 178, 178));
-    @include size(500px,120px);
+    @include size(100%,120px);
     align-items: center;
     color: rgb(275, 179, 23);
     font-size: 15px;        
