@@ -13,7 +13,7 @@
     margin-bottom: 40px;
     padding: 0;
     background-image: url("https://cdn.pixabay.com/photo/2016/11/08/17/59/white-1809005_960_720.jpg");
-    @include size(100vw, 100vh); 
+    @include size(100vw, 100%); 
 }
 /*CAROUSEL--PORTADA*/
 .carousel__portada{
@@ -74,7 +74,7 @@
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
 }
-.block__text{
+.block__text1{
     color: rgb(253, 167, 8);
     @extend.Block__texto;
     font-size: 200%;
@@ -106,6 +106,10 @@
     width: 90%;
     padding: 10px;
     margin: 10px;
+}
+.formulario{
+    float: left;
+    position: relative;
 }
 #formulario{
     float: left;
@@ -166,17 +170,19 @@ ul ul{
     /*footer*/
  .footer__ubicacion{
      display: flex;
-     position: relative;
+     height: 30px;
+     position: absolute;
      bottom: 0;
+     left:0;
      @include size(100%,40px)
  }   
- .footer__grad{
+ #footer__grad{
     display: grid;
     position: relative;
     left: 0;
     bottom: 0;
     background-image: linear-gradient(to right,black,rgb(180, 178, 178));
-    @include size(100%,120px);
+    @include size(500px,120px);
     align-items: center;
     color: rgb(275, 179, 23);
     font-size: 15px;        
@@ -205,7 +211,13 @@ ul ul{
     height: 20px;
     width: 20px;
 }
-@media only screen and (min-width: 500px){
+.col-12{
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    justify-content: flex-start;   
+}
+@media (min-width: 500px){
     #footer__grad{
         @include size(600px,120px);
         font-size: 17.5px;     
@@ -296,13 +308,14 @@ ul ul{
  .main{
     display: grid;
     font-family: sans-serif;
+    height: 100vh;
     grid-gap: 10px;
     grid-template-areas: "Productos Contenido INutricional"
                          "TipoP ContenidoP InformacionP"
                          ;
 }
 main > *{
-    background-color: rgb(247, 214, 126);
+    background-color: rgb(252, 192, 119);
     display: flex;
     justify-content: center;
     align-items: center;
