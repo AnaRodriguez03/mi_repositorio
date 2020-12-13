@@ -76,7 +76,7 @@
 }
 .block__text1{
     color: rgb(253, 167, 8);
-    @extend.Block__texto;
+    @extend .block__texto;
     font-size: 200%;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
@@ -85,18 +85,18 @@
 }
 .block__text2{
     color: rgb(68, 64, 64);
-    @extend.Block__texto1;    
+    @extend .block__texto1;    
 }
 .Block__text3{
     color: rgb(61, 35, 4);
-    @extend.Block__texto1;
+    @extend .block__texto1;
     font-size: large;
     text-align: justify;
 }
 .Block__text4{
     text-decoration: none;
     font-size: medium;
-    @extend.Block__texto;
+    @extend .block__texto;
     color: rgb(61, 35, 4);
     text-align: center;
 }

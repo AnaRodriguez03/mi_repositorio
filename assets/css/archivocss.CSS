@@ -1,69 +1,77 @@
+@charset "UTF-8";
 .Body__Index {
   background-image: url("https://cdn.pixabay.com/photo/2015/06/24/01/15/morning-819362_960_720.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  height: 100vh; }
 
 .Body__General {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   background-image: url("https://cdn.pixabay.com/photo/2016/11/08/17/59/white-1809005_960_720.jpg");
-  height: 1500px;
-  width: 100%; }
+  width: 100vw;
+  height: 100%; }
 
-@media only screen and (min-width: 768px) {
-  .Body__General {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/08/17/59/white-1809005_960_720.jpg"); } }
-
-.header__img {
+/*CAROUSEL--PORTADA*/
+.carousel__portada {
   display: flex;
   position: absolute;
-  top: 25vh;
-  left: 35vw; }
+  top: 40vh;
+  left: 17.5vw; }
 
-.header__general {
-  display: flex;
-  height: 30vh; }
-
-@media (max-width: 768px) {
-  .header__img {
+@media (min-width: 500px) {
+  .carousel__portada {
     display: flex;
     position: absolute;
-    top: 37vh;
-    left: 10vw; } }
+    top: 37.5vh;
+    left: 17.5vw; }
+  .carousel-item {
+    width: 350px;
+    height: 350px; }
+  .tamaño-imagen {
+    width: 350px;
+    height: 350px; } }
+
+@media (min-width: 768px) {
+  .carousel__portada {
+    display: flex;
+    position: absolute;
+    top: 35vh;
+    left: 35vw; }
+  .carousel-item {
+    width: 400px;
+    height: 400px; }
+  .tamaño-imagen {
+    width: 400px;
+    height: 400px; } }
 
 .no-gutters {
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
-.logo {
-  height: 100px;
-  width: 100px; }
+.header__logo {
+  width: 100px;
+  height: 100px; }
 
-.navbar {
-  background-color: rgb(31, 29, 29);
-  padding: 1rem 2rem;
-  top: 0;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.5rem;
-  height: 16%; }
+.header__general {
+  display: flex;
+  height: 30vh; }
 
-.nav-link {
-  color: white; }
+.navbar-nav {
+  font-size: 15px;
+  font-weight: bold; }
 
-.Block__texto, .Block__text, .Block__text3 {
+.block__texto, .block__text1, .Block__text4 {
   font-weight: bold;
   font-style: italic; }
 
-.Block__texto1, .Block__text1, .Block__text2 {
+.block__texto1, .block__text2, .Block__text3 {
   font-family: 'Comfortaa', cursive;
   font-weight: bold; }
 
-.Block__text {
+.block__text1 {
   color: #fda708;
   font-size: 200%;
   font-family: 'Josefin Sans', sans-serif;
@@ -71,15 +79,15 @@
   text-transform: capitalize;
   line-height: normal; }
 
-.Block__text1 {
+.block__text2 {
   color: #444040; }
 
-.Block__text2 {
+.Block__text3 {
   color: #3d2304;
   font-size: large;
   text-align: justify; }
 
-.Block__text3 {
+.Block__text4 {
   text-decoration: none;
   font-size: medium;
   color: #3d2304;
@@ -92,15 +100,26 @@
   padding: 10px;
   margin: 10px; }
 
+.formulario {
+  float: left;
+  position: relative; }
+
 #formulario {
   float: left;
-  height: 30%;
-  width: 100%; }
+  width: 65vw;
+  height: 50vh; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 500px) {
   .estilo-form {
-    height: 50%;
-    width: 70%; } }
+    width: 90%; } }
+
+@media (min-width: 768) {
+  .estilo-form {
+    width: 55%; }
+  #formulario {
+    float: left;
+    width: 50vw;
+    height: 50vh; } }
 
 .ol li {
   list-style-type: upper-roman;
@@ -112,8 +131,8 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 15vh;
   width: 100%;
+  height: 15vh;
   margin: 0;
   padding-left: 0;
   background-color: #2c281e;
@@ -139,78 +158,99 @@ ul ul {
       display: block; }
 
 /*footer*/
+.footer__ubicacion {
+  display: flex;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; }
+
 #footer__grad {
   display: grid;
   position: relative;
   left: 0;
   bottom: 0;
   background-image: linear-gradient(to right, black, #b4b2b2);
-  height: 70px;
-  width: 100%;
+  width: 500px;
+  height: 120px;
   align-items: center;
-  color: #ffb317; }
+  color: #ffb317;
+  font-size: 15px; }
 
 .footer__logoI {
   display: flex;
   position: absolute;
-  bottom: 5;
-  right: 5px; }
+  bottom: 53px;
+  right: 10px;
+  height: 20px;
+  width: 20px; }
 
 .footer__logoW {
   display: flex;
   position: absolute;
-  bottom: 0;
-  right: 65px; }
+  bottom: 80px;
+  right: 8px;
+  height: 30px;
+  width: 25px; }
 
 .footer__logoF {
   display: flex;
   position: absolute;
-  bottom: 5;
-  right: 130px; }
+  bottom: 20px;
+  right: 10px;
+  height: 20px;
+  width: 20px; }
 
-@media only screen and (min-width: 768px) {
+.col-12 {
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  justify-content: flex-start; }
+
+@media (min-width: 500px) {
   #footer__grad {
-    display: flex;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-    background-image: linear-gradient(to right, black, #b4b2b2);
-    height: 100px;
-    width: 100%;
-    align-items: center;
-    color: #ffb317; }
-  .footer__divTelefono {
-    display: flex;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 90%;
-    width: 55%;
-    align-items: left; }
+    width: 600px;
+    height: 120px;
+    font-size: 17.5px; }
   .footer__logoI {
-    display: flex;
-    position: absolute;
-    bottom: 5;
-    height: 10%;
-    width: 10%;
-    right: 5%; }
+    bottom: 40px;
+    right: 20px;
+    width: 50px;
+    height: 50px; }
   .footer__logoW {
-    display: flex;
-    position: absolute;
-    bottom: 53px;
-    height: 15%;
-    width: 10%;
-    right: 19%; }
+    bottom: 20px;
+    right: 90px;
+    width: 60px;
+    height: 90px; }
   .footer__logoF {
-    display: flex;
-    position: absolute;
-    bottom: 5;
-    height: 10%;
-    width: 10%;
-    right: 30%; } }
+    bottom: 40px;
+    right: 165px;
+    width: 50px;
+    height: 50px; } }
 
-/*  BOTONES FORMULARIO  */
+@media (min-width: 768px) {
+  .footer__logoI {
+    bottom: 40px;
+    right: 50px;
+    width: 50px;
+    height: 50px; }
+  .footer__logoW {
+    bottom: 20px;
+    right: 125px;
+    width: 60px;
+    height: 90px; }
+  .footer__logoF {
+    bottom: 40px;
+    right: 210px;
+    width: 50px;
+    height: 50px; }
+  #footer__grad {
+    width: 100vw;
+    height: 120px;
+    font-size: 20px; } }
+
 .input:focus {
   background-color: #ffb317; }
 
@@ -234,8 +274,8 @@ ul ul {
 
 .imagen {
   grid-column: 3/4;
-  height: 30px;
   width: 30px;
+  height: 30px;
   animation-name: imagen;
   animation-duration: 2s; }
 
@@ -249,11 +289,11 @@ ul ul {
 
 @keyframes imagen {
   from {
-    height: 30px;
-    width: 30px; }
+    width: 30px;
+    height: 30px; }
   to {
-    height: 100px;
-    width: 100px; } }
+    width: 100px;
+    height: 100px; } }
 
 /*Tabla pagina productos*/
 .main {
@@ -265,20 +305,20 @@ ul ul {
  "TipoP ContenidoP InformacionP"; }
 
 main > * {
-  background-color: aqua;
+  background-color: #fcc077;
   display: flex;
   justify-content: center;
   align-items: center; }
 
-aside:first-of-type {
+.aside {
   grid-area: Productos;
   background-color: orange; }
 
-article {
+.article {
   grid-area: Contenido;
   background-color: orange; }
 
-aside:last-of-type {
+.aside1 {
   grid-area: INutricional;
   background-color: orange; }
 
@@ -298,3 +338,56 @@ aside:last-of-type {
   grid-area: InformacionP;
   display: grid;
   grid-row: auto; }
+
+.nosotros__contenido {
+  display: grid;
+  grid-template-areas: "texto"
+ "contenido"; }
+
+.texto__nosotros {
+  grid-area: texto;
+  display: grid;
+  grid-row: auto; }
+
+.imagen_nostros {
+  grid-area: imagen;
+  display: grid;
+  grid-row: auto;
+  width: 75px;
+  height: 140px; }
+
+@media (min-width: 500px) {
+  .nosotras__contenido {
+    display: grid;
+    grid-template-areas: "texto contenido";
+    display: flex;
+    position: relative; }
+  .texto__nosotros {
+    grid-area: texto;
+    display: grid;
+    grid-row: auto;
+    width: 65%; }
+  .imagen__nosotros {
+    grid-area: imagen;
+    display: grid;
+    grid-row: auto;
+    width: 100px;
+    height: 163px; } }
+
+@media (min-width: 768px) {
+  .nosotros__contenido {
+    display: grid;
+    grid-template-areas: "texto contenido";
+    display: flex;
+    position: relative; }
+  .texto__nosotros {
+    grid-area: texto;
+    display: grid;
+    grid-row: auto;
+    width: 50%; }
+  .imagen__nosotros {
+    grid-area: imagen;
+    display: grid;
+    grid-row: auto;
+    width: 200;
+    height: 326; } }
