@@ -63,11 +63,11 @@
   font-size: 15px;
   font-weight: bold; }
 
-.block__texto, .block__text1, .Block__text4 {
+.block__texto, .block__text1, .block__text4 {
   font-weight: bold;
   font-style: italic; }
 
-.block__texto1, .block__text2, .Block__text3 {
+.block__texto1, .block__text2, .block__text3 {
   font-family: 'Comfortaa', cursive;
   font-weight: bold; }
 
@@ -82,12 +82,12 @@
 .block__text2 {
   color: #444040; }
 
-.Block__text3 {
+.block__text3 {
   color: #3d2304;
   font-size: large;
   text-align: justify; }
 
-.Block__text4 {
+.block__text4 {
   text-decoration: none;
   font-size: medium;
   color: #3d2304;
@@ -101,8 +101,10 @@
   margin: 10px; }
 
 .formulario {
-  float: left;
-  position: relative; }
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center; }
 
 #formulario {
   float: left;
@@ -154,8 +156,8 @@ ul ul {
     text-decoration: none;
     font-size: 10px;
     font-family: 'Josefin Sans', sans-serif; }
-    ul ul li li:hover {
-      display: block; }
+  ul ul li:hover {
+    display: block; }
 
 /*footer*/
 .footer__ubicacion {
@@ -297,7 +299,6 @@ ul ul {
 .main {
   display: grid;
   font-family: sans-serif;
-  height: 100vh;
   grid-gap: 10px;
   grid-template-areas: "Productos Contenido INutricional" "TipoP ContenidoP InformacionP"; }
 

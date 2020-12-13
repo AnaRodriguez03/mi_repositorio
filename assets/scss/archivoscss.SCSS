@@ -87,13 +87,13 @@
     color: rgb(68, 64, 64);
     @extend .block__texto1;    
 }
-.Block__text3{
+.block__text3{
     color: rgb(61, 35, 4);
     @extend .block__texto1;
     font-size: large;
     text-align: justify;
 }
-.Block__text4{
+.block__text4{
     text-decoration: none;
     font-size: medium;
     @extend .block__texto;
@@ -108,8 +108,10 @@
     margin: 10px;
 }
 .formulario{
-    float: left;
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-content: center;
 }
 #formulario{
     float: left;
@@ -139,35 +141,36 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    @include size(100%,15vh);
+    @include sizes(100%,15vh);
     margin: 0;
     padding-left: 0;
     background-color: rgb(44, 40, 30);
     align-items: center;
     list-style: none;
     li a{
-     list-style: none;
-     text-decoration: none;
-     color: rgb(197, 143, 7);
-     font-size: 15px;
-     font-family: 'Josefin Sans', sans-serif;
-    }    
+        list-style: none;
+    text-decoration: none;
+    color: rgb(197, 143, 7);
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    }
 }
+
 ul ul{
     position: absolute;
     display: none;
     li{
-    display: block;
-    color:  rgb(197, 143, 7);
-    text-decoration: none;
-    font-size: 10px; 
-    font-family: 'Josefin Sans', sans-serif;
+        display: block;
+        color:  rgb(197, 143, 7);
+        text-decoration: none;
+        font-size: 10px; 
+        font-family: 'Josefin Sans', sans-serif;
+    }
     li:hover{
         display: block;
     }
-    }
-}
-    /*footer*/
+}    
+                                                    /*FOOTER*/
  .footer__ubicacion{
      display: flex;
      position: relative;
@@ -306,7 +309,7 @@ ul ul{
  .main{
     display: grid;
     font-family: sans-serif;
-    height: 100vh;
+  
     grid-gap: 10px;
     grid-template-areas: "Productos Contenido INutricional"
                          "TipoP ContenidoP InformacionP"
@@ -386,7 +389,6 @@ main > *{
     }
 }
 @media (min-width:768px){
-
     .nosotros__contenido{
         display: grid;
         grid-template-areas: "texto contenido";
